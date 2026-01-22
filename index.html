@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#012a30">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Jersean's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,33 +14,42 @@
     <header>
         <nav class="tabs">
             <h2>RENOEL JERSEAN OCAMPO</h2>
-            <a href="#about" class="active">About</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="active">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="about" class="content hero-section">
-            <div class="about-text">
-                <h2 class="portfolio-label">OJT PORTFOLIO</h2>
-                <h1>Renoel Jersean O. Ocampo</h1>
-                <p class="tagline">
-                    UI/UX Beginner with graphics and project analysis
-                </p>
-                <a href="Resume/Ocampo_Resume.pdf" download="Ocampo_Resume.pdf" class="resume-btn" id="downloadResumeBtn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    Download Resume
-                </a>
+            <div class="hero-background">
+                <img src="Images/jersean.png" alt="Background" class="background-image">
             </div>
-            <div class="about-image">
-                <img src="Images/jersean.png" alt="Renoel Jersean O. Ocampo">
+            <div class="hero-content">
+                <div class="about-text">
+                    <h2 class="portfolio-label">OJT PORTFOLIO</h2>
+                    <h1>Renoel Jersean O. Ocampo</h1>
+                    <p class="tagline">
+                        UI/UX Beginner with graphics and project analysis
+                    </p>
+                    <a href="Resume/Ocampo_Resume.pdf" download="Ocampo_Resume.pdf" class="resume-btn" id="downloadResumeBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -46,22 +58,88 @@
             <div class="education-container">
                 <h2>Education</h2>
                 <div class="education-item">
-                    <h3>Bachelor of Science in Information Technology</h3>
-                    <p class="school-name">Cavite State University - Main Campus</p>
-                    <p class="year">2022 - Present</p>
+                    <div class="school-info">
+                        <strong class="school-name">Cavite State University - Main Campus</strong>
+                    </div>
+                    <div class="course-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14L22 9L12 4L2 9L12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 9V15C2 15 5 18 12 18S22 15 22 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Bachelor of Science in Information Technology</span>
+                    </div>
+                    <div class="date-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>2022 - Present</span>
+                    </div>
                 </div>
                 <div class="education-item">
-                    <h3>Technical-Vocational-Livelihood - Information and Communications Technology</h3>
-                    <p class="school-name">Tagaytay City National High School - Integrated Senior High School</p>
-                    <p class="year">2020 - 2022</p>
+                    <div class="school-info">
+                        <strong class="school-name">Tagaytay City National High School - Integrated Senior High School</strong>
+                    </div>
+                    <div class="course-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14L22 9L12 4L2 9L12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 9V15C2 15 5 18 12 18S22 15 22 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Technical-Vocational-Livelihood - Information and Communications Technology</span>
+                    </div>
+                    <div class="date-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>2020 - 2022</span>
+                    </div>
                 </div>
                 <div class="education-item">
-                    <p class="school-name">Palocpoc National High School</p>
-                    <p class="year">2016 - 2020</p>
+                    <div class="school-info">
+                        <strong class="school-name">Palocpoc National High School</strong>
+                    </div>
+                    <div class="course-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14L22 9L12 4L2 9L12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 9V15C2 15 5 18 12 18S22 15 22 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Junior High School</span>
+                    </div>
+                    <div class="date-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>2016 - 2020</span>
+                    </div>
                 </div>
                 <div class="education-item">
-                    <p class="school-name">Mendez-Nuñez Montessori</p>
-                    <p class="year">2010 - 2016</p>
+                    <div class="school-info">
+                        <strong class="school-name">Mendez-Nuñez Montessori</strong>
+                    </div>
+                    <div class="course-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14L22 9L12 4L2 9L12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 9V15C2 15 5 18 12 18S22 15 22 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Elementary</span>
+                    </div>
+                    <div class="date-info">
+                        <svg class="education-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>2010 - 2016</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -122,7 +200,7 @@
                             <div class="project-info">
                                 <h3>Mendez Day Parade</h3>
                                 <p class="project-description">Community parade event poster with vibrant celebration theme</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/MendezDay12-PARADE-FINAL.png', 'Mendez Day Parade', 'Community parade event poster with vibrant celebration theme')">View Design ↗</button>
                             </div>
                         </div>
@@ -133,7 +211,7 @@
                             <div class="project-info">
                                 <h3>Clamor De La Libertad</h3>
                                 <p class="project-description">A live performance poster and invitation that increased engagements</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/CDLL - FINAL POSTER.png', 'CDLL Championship', 'Sports league championship poster with dynamic team graphics')">View Design ↗</button>
                             </div>
                         </div>
@@ -144,19 +222,19 @@
                             <div class="project-info">
                                 <h3>Sunset Session</h3>
                                 <p class="project-description">Music event poster with warm sunset aesthetic and modern typography</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/SunsetSession.png', 'Sunset Session', 'Music event poster with warm sunset aesthetic and modern typography')">View Design ↗</button>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-image">
-                                <img src="Poster/CCS-bookcover.png" alt="CCS Book Cover">
+                                <img src="Poster/Ocampo_final.png" alt="CCS Book Cover">
                             </div>
                             <div class="project-info">
-                                <h3>CCS Book Cover</h3>
-                                <p class="project-description">Academic book cover design with professional layout and typography</p>
-                                <p class="project-tools">Tools: Canva</p>
-                                <button class="view-project-btn" onclick="openModal('Poster/CCS-bookcover.png', 'CCS Book Cover', 'Academic book cover design with professional layout and typography')">View Design ↗</button>
+                                <h3>Personal Magazine Cover</h3>
+                                <p class="project-description">A personal magazine cover project designed to introduce ourselves to the audience</p>
+                                <p class="project-tools">Tool: GIMP</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/Ocampo_final.png', 'Personal Magazine Cover', 'A personal magazine cover project designed to introduce ourselves to the audience, expressing who we are through visuals, typography, and a story that reflects our personality and passions.')">View Design ↗</button>
                             </div>
                         </div>
                         <div class="project-item">
@@ -166,7 +244,7 @@
                             <div class="project-info">
                                 <h3>UrbanFit Gym</h3>
                                 <p class="project-description">Fitness center branding poster with energetic urban design elements</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/UrbanFit.png', 'UrbanFit Gym', 'Fitness center branding poster with energetic urban design elements')">View Design ↗</button>
                             </div>
                         </div>
@@ -177,7 +255,7 @@
                             <div class="project-info">
                                 <h3>HustleTalk</h3>
                                 <p class="project-description">Podcast branding and logo design with modern entrepreneurial aesthetic</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/HustleTalk-logopost.png', 'HustleTalk', 'Podcast branding and logo design with modern entrepreneurial aesthetic')">View Design ↗</button>
                             </div>
                         </div>
@@ -188,7 +266,7 @@
                             <div class="project-info">
                                 <h3>Music Scholar Tarpaulin</h3>
                                 <p class="project-description">Tarpaulin to showcase the talents and the pride of the band</p>
-                                <p class="project-tools">Tools: Photoshop</p>
+                                <p class="project-tools">Tool: Photoshop</p>
                                 <button class="view-project-btn" onclick="openModal('Poster/TARPAULIN.png', 'Tarpaulin', 'Tarpaulin to showcase the talents and the pride of the band')">View Design ↗</button>
                             </div>
                         </div>
