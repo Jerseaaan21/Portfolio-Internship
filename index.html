@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersean's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="tabs">
+            <h2>JERSEAN</h2>
+            <a href="#about" class="active">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="content hero-section">
+            <div class="about-text">
+                <h2 class="portfolio-label">OJT PORTFOLIO</h2>
+                <h1>Renoel Jersean O. Ocampo</h1>
+                <p class="tagline">
+                    UI/UX Beginner with graphics and project analysis
+                </p>
+                <a href="Resume/Ocampo_Resume.pdf" download="Ocampo_Resume.pdf" class="resume-btn" id="downloadResumeBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+            <div class="about-image">
+                <img src="Images/jersean.png" alt="Renoel Jersean O. Ocampo">
+            </div>
+        </section>
+
+        <section id="education" class="content">
+            <div class="education-container">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="school-name">Cavite State University - Main Campus</p>
+                    <p class="year">2022 - Present</p>
+                </div>
+                <div class="education-item">
+                    <h3>Technical-Vocational-Livelihood - Information and Communications Technology</h3>
+                    <p class="school-name">Tagaytay City National High School - Integrated Senior High School</p>
+                    <p class="year">2020 - 2022</p>
+                </div>
+                <div class="education-item">
+                    <p class="school-name">Palocpoc National High School</p>
+                    <p class="year">2016 - 2020</p>
+                </div>
+                <div class="education-item">
+                    <p class="school-name">Mendez-Nuñez Montessori</p>
+                    <p class="year">2010 - 2016</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                
+                <!-- Project Sub-tabs -->
+                <div class="project-tabs">
+                    <button class="project-tab-btn active" data-tab="prototypes">Prototypes</button>
+                    <button class="project-tab-btn" data-tab="graphics">Graphics Design</button>
+                </div>
+                
+                <!-- Prototypes Tab Content -->
+                <div id="prototypes" class="project-tab-content active">
+                    <div class="project-grid">
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Prototype/E-BULLETIN.png" alt="CEIT E-Bulletin Prototype">
+                            </div>
+                            <div class="project-info">
+                                <h3>CEIT E-Bulletin Prototype</h3>
+                                <p class="project-description">“A centralized digital bulletin designed for the College of Engineering and Information Technology</p>
+                                <a href="https://www.figma.com/design/WSz5GJoVNxlqknZ26C1Rry/PROTOTYPE?node-id=0-1&t=r6WrZYgQNLfISMP4-1" class="view-project-btn" target="_blank">View in Figma ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Prototype/STUDENTPORTAL.png" alt="Student Portal Prototype">
+                            </div>
+                            <div class="project-info">
+                                <h3>CvSU Student Portal Prototype</h3>
+                                <p class="project-description">Responsive web design prototype for educational platform with dashboard features</p>
+                                <a href="https://www.figma.com/design/ldFraNcG9Hsxr7nD9TMrg5/CvSU-prototype?node-id=0-1&t=bzicKiC4mRLHSy50-1" class="view-project-btn" target="_blank">View in Figma ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Prototype/POWERPULSE.png" alt="PowerPulse Prototype">
+                            </div>
+                            <div class="project-info">
+                                <h3>PowerPulse Fitness App</h3>
+                                <p class="project-description">Mobile fitness tracking app with workout planning, progress monitoring, and social features for enhanced user engagement</p>
+                                <a href="https://www.figma.com/design/uw3DjIgEiZ2jZozGwn8ISi/PowerPulse?node-id=0-1&t=Ob5WsS1LZEyO20Bq-1" class="view-project-btn" target="_blank">View in Figma ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Graphics Design Tab Content -->
+                <div id="graphics" class="project-tab-content">
+                    <div class="project-grid">
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/MendezDay12-PARADE-FINAL.png" alt="Mendez Day Parade">
+                            </div>
+                            <div class="project-info">
+                                <h3>Mendez Day Parade</h3>
+                                <p class="project-description">Community parade event poster with vibrant celebration theme</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/MendezDay12-PARADE-FINAL.png', 'Mendez Day Parade', 'Community parade event poster with vibrant celebration theme')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/CDLL - FINAL POSTER.png" alt="CDLL Final Poster">
+                            </div>
+                            <div class="project-info">
+                                <h3>Clamor De La Libertad</h3>
+                                <p class="project-description">A live performance poster and invitation that increased engagements</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/CDLL - FINAL POSTER.png', 'CDLL Championship', 'Sports league championship poster with dynamic team graphics')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/SunsetSession.png" alt="Sunset Session">
+                            </div>
+                            <div class="project-info">
+                                <h3>Sunset Session</h3>
+                                <p class="project-description">Music event poster with warm sunset aesthetic and modern typography</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/SunsetSession.png', 'Sunset Session', 'Music event poster with warm sunset aesthetic and modern typography')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/CCS-bookcover.png" alt="CCS Book Cover">
+                            </div>
+                            <div class="project-info">
+                                <h3>CCS Book Cover</h3>
+                                <p class="project-description">Academic book cover design with professional layout and typography</p>
+                                <p class="project-tools">Tools: Canva</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/CCS-bookcover.png', 'CCS Book Cover', 'Academic book cover design with professional layout and typography')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/UrbanFit.png" alt="UrbanFit">
+                            </div>
+                            <div class="project-info">
+                                <h3>UrbanFit Gym</h3>
+                                <p class="project-description">Fitness center branding poster with energetic urban design elements</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/UrbanFit.png', 'UrbanFit Gym', 'Fitness center branding poster with energetic urban design elements')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/HustleTalk-logopost.png" alt="HustleTalk Logo">
+                            </div>
+                            <div class="project-info">
+                                <h3>HustleTalk</h3>
+                                <p class="project-description">Podcast branding and logo design with modern entrepreneurial aesthetic</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/HustleTalk-logopost.png', 'HustleTalk', 'Podcast branding and logo design with modern entrepreneurial aesthetic')">View Design ↗</button>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="Poster/TARPAULIN.png" alt="Music Scholars Tarpaulin">
+                            </div>
+                            <div class="project-info">
+                                <h3>Music Scholar Tarpaulin</h3>
+                                <p class="project-description">Tarpaulin to showcase the talents and the pride of the band</p>
+                                <p class="project-tools">Tools: Photoshop</p>
+                                <button class="view-project-btn" onclick="openModal('Poster/TARPAULIN.png', 'Tarpaulin', 'Tarpaulin to showcase the talents and the pride of the band')">View Design ↗</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>UI/UX Design</h3>
+                        <ul class="skill-list">
+                            <li>User Interface Design</li>
+                            <li>User Experience Research</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Graphic Design</h3>
+                        <ul class="skill-list">
+                            <li>Logo Design</li>
+                            <li>Poster Design</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Project Analysis</h3>
+                        <ul class="skill-list">
+                            <li>Requirements Gathering</li>
+                            <li>User Research</li>
+                            <li>Problem Identification</li>
+                            <li>Solution Planning</li>
+                            <li>Project Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content">
+            <div class="contact-container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <span class="contact-text">ocamporenoeljersean@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM12 17.3C11.31 17.3 10.75 16.74 10.75 16.05V15.95C10.75 15.26 11.31 14.7 12 14.7C12.69 14.7 13.25 15.26 13.25 15.95V16.05C13.25 16.74 12.69 17.3 12 17.3ZM14.25 13.5H9.75C9.34 13.5 9 13.16 9 12.75C9 12.34 9.34 12 9.75 12H14.25C14.66 12 15 12.34 15 12.75C15 13.16 14.66 13.5 14.25 13.5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <span class="contact-text">Facebook: Renoel Jersean Oldan Ocampo</span>
+                                <span class="contact-text">Instagram: @jerseangraphicsss</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Github</h3>
+                            <span class="contact-text">GitHub: Jerseaaan21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Renoel Jersean O. Ocampo. All rights reserved.</p>
+    </footer>
+
+    <!-- Design Modal - Positioned outside all containers -->
+    <div id="designModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Design Title</h3>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Design Preview">
+                <p id="modalDescription">Design description</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
