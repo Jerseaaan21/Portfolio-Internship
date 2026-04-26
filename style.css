@@ -7,7 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #012a30;
+    background: linear-gradient(135deg, #24948a, #012a30);
+    background-attachment: fixed;
     color: #333;
 }
 
@@ -107,7 +108,7 @@ section {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, #24948a, #012a30);
+    background: transparent;
     color: #fff;
     padding: 5px 40px 80px 40px;
     min-height: calc(100vh - 80px);
@@ -236,23 +237,23 @@ section p {
 }
 
 #about {
-    background: linear-gradient(135deg, #24948a, #012a30);
+    background: transparent;
 }
 
 #education {
-    background: linear-gradient(40deg, #24948a, #012a30);
+    background: transparent;
 }
 
 #projects {
-    background: linear-gradient(140deg, #24948a, #012a30);
+    background: transparent;
 }
 
 #skills {
-    background: linear-gradient(42deg, #24948a, #012a30);
+    background: transparent;
 }
 
 #contact {
-    background: linear-gradient(145deg, #24948a, #012a30);
+    background: transparent;
 }
 
 .project-item, .skill-item, .education-item {
@@ -432,10 +433,10 @@ footer {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     justify-items: center;
 }
@@ -447,7 +448,7 @@ footer {
     box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .skill-item:hover {
